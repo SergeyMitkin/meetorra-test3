@@ -1,0 +1,54 @@
+#navbar ul {
+    opacity:0;
+    visibility:hidden;
+    background-color: cadetblue;
+    position: absolute;
+    top: 100%;
+    transition:500ms;
+}
+
+#navbar li:hover ul
+{
+    opacity: 1;
+    visibility:visible
+}
+
+#navbar, #navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navbar {
+    height: 30px;
+    background-color: #666;
+    display: inline-block;
+}
+
+#navbar li {
+    float: left;
+    position: relative;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#navbar li a {
+    display: block;
+    padding: 6px;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navbar ul li {
+    float: none;
+}
+
+#navbar li:hover {
+    background-color: cadetblue;
+}
+
+#navbar ul li:hover {
+    background-color: #666;
+}
